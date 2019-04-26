@@ -5,9 +5,7 @@
   #featured-vehicles-group {
     .vlineupList {
       .featured-vehicle {
-        border-bottom: 1px solid #d5d5d5;
         padding-bottom: 35px;
-        margin-bottom: -15px;
         .img-overlay-container {
           position: relative;
           overflow: hidden;
@@ -47,6 +45,10 @@
           }
         }
       }
+    }
+    .slick-dots {
+      border-bottom: 1px solid #d5d5d5;
+      padding-bottom: 10px;
     }
     @include screen-queries-min-width('sm') {
       padding: 0 !important;

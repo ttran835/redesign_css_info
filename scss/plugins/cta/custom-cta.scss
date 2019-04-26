@@ -1,0 +1,45 @@
+#custom-cta {
+  background-color: $primary-test-color;
+
+  .cta-img-panel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    padding: 40px 15px;
+    h2 {
+      display: block;
+      margin: 25px 25px 5px;
+      text-align: center;
+      color: $secondary-font-color;
+    }
+    a {
+      display: block;
+      width: 70%;
+      margin: 10px auto;
+      text-align: center;
+      @include a-tag-button-style;
+      @include text-box-shadow;
+      color: $secondary-font-color;
+    }
+  }
+
+  #sell-your-car {
+    background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #finance-packages {
+    background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #why-us {
+    background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
