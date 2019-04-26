@@ -1,0 +1,13 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+/* Slider customization */
+
+#personalizer {
+  background-color: $primary-test-color;
+  .slider-fade {
+    @include ui-shadow-no-hover;
+    .slick-slider {
+      margin-bottom: 0;
+    }
+  }
+}

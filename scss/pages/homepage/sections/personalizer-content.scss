@@ -1,0 +1,42 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+/* Title Personalizer */
+
+#personalized-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  @include screen-queries-min-width(sm) {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    @include ui-shadow-with-hover;
+  }
+  @include page-title-border-box;
+  .title {
+    font-size: $title-font-size;
+    margin: 10px 0 0 0;
+    padding: 15px;
+    color: $secondary-font-color;
+    text-align: center;
+  }
+  .message {
+    font-size: 2.3rem;
+    color: $secondary-font-color;
+    text-align: center;
+  }
+  a {
+    @include a-tag-button-style;
+    color: $secondary-font-color;
+  }
+  p {
+    margin: 25px;
+  }
+}

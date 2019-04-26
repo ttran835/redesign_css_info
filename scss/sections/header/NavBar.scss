@@ -1,0 +1,23 @@
+@import '_rolls2_css/scss/_custom.scss';
+/* NavBar Changes */
+.navbar {
+  position: sticky !important;
+  top: 45px;
+  @include ui-shadow-no-hover;
+}
+
+.navbar-inverse {
+  background-color: #52575a !important;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #202121 !important;
+}
+
+.navbar-nav .dropdown-menu li a {
+  color: $primary-font-color !important;
+}
+
+.navbar-nav .dropdown-menu li:hover {
+  background-color: $primary-test-color !important;
+}

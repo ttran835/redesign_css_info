@@ -1,0 +1,26 @@
+@import './custom';
+
+/* This will be used to change overall site's color variables */
+
+/* Dark background color update */
+.pg-body-wrap {
+  background-color: $secondary-test-color;
+}
+
+.fc-page-title {
+  background-color: $secondary-test-color;
+  color: $primary-font-color;
+}
+
+.content-container li,
+.content-container p {
+  color: $primary-font-color;
+}
+
+.sbg-main-container {
+  border-top: 5px solid $secondary-test-color;
+}
+
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+  color: $primary-font-color;
+}

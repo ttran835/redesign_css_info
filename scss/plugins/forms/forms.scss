@@ -1,0 +1,19 @@
+@import '_rolls2_css/scss/_custom.scss';
+/* Dark background for forms color update */
+.fc-page-title {
+  background-color: #333;
+  color: $primary-font-color;
+}
+
+.content-container li,
+.content-container p {
+  color: $primary-font-color;
+}
+
+.sbg-main-container {
+  border-top: 5px solid #333;
+}
+
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
+  color: $primary-font-color;
+}

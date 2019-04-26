@@ -1,0 +1,30 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+/* change parallax contents on all pages */
+#parallax {
+  height: $parallax-default-height;
+}
+
+#parallax {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#parallax h1 {
+  color: $secondary-font-color;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0px;
+}
+
+#parallax .page-title-border-box {
+  @include page-title-border-box;
+  @include ui-shadow-no-hover;
+}

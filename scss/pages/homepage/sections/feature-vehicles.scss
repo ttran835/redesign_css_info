@@ -1,0 +1,88 @@
+@import '_rolls2_css/scss/_custom.scss';
+/* featured vehicles */
+
+#homepage-featured-vehicles {
+  #featured-vehicles-group {
+    .vlineupList {
+      .featured-vehicle {
+        border-bottom: 1px solid #d5d5d5;
+        padding-bottom: 35px;
+        margin-bottom: -15px;
+        .img-overlay-container {
+          position: relative;
+          overflow: hidden;
+          @include gray-img-filter;
+          .reference-overlay {
+            display: block;
+            position: absolute;
+            z-index: 20;
+            background: rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            left: 27px;
+            bottom: 20px;
+            right: 0px;
+            width: 84.5%;
+            height: 0;
+            -webkit-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            a {
+              @include text-box-shadow;
+              @include a-tag-button-style;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              background-color: transparent;
+              border-color: #fff;
+              text-transform: uppercase;
+              font-weight: bold;
+              color: $secondary-font-color;
+            }
+          }
+          &:hover .reference-overlay {
+            height: 92.3%;
+          }
+        }
+      }
+    }
+    @include screen-queries-min-width('sm') {
+      padding: 0 !important;
+      .sectionTitle {
+        text-align: center;
+        font-size: 30px;
+        margin-top: 35px;
+        padding-bottom: 20px;
+        margin-bottom: 35px;
+        border-bottom: 1px solid #d5d5d5;
+      }
+      @include screen-queries-min-width('md') {
+        .sectionTitle {
+          padding-top: 0;
+        }
+      }
+      @include screen-queries-min-width('lg') {
+        .sectionTitle {
+          padding-top: 0;
+        }
+      }
+      @include screen-queries-min-width('xtra-lg') {
+        .sectionTitle {
+          padding-top: 0;
+        }
+      }
+      @include screen-queries-min-width('2xtra-lg') {
+        .sectionTitle {
+          padding-top: 0;
+        }
+      }
+      @include screen-queries-min-width('3xtra-lg') {
+        .sectionTitle {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}

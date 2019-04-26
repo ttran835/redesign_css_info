@@ -1,0 +1,14 @@
+@import '_rolls2_css/scss/_custom.scss';
+/* Events page */
+.tribe-events-page-title {
+  color: $primary-font-color;
+}
+
+.pm-events-calendar .calendar-title {
+  color: $primary-font-color;
+}
+
+.container.pm-events-calendar {
+  background-color: $secondary-test-color;
+  width: 100%;
+}

@@ -1,0 +1,34 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+.header .dealer-name-static {
+  font-size: 17px !important;
+}
+
+.header {
+  background-color: #44424b !important;
+}
+
+.dealer-name-static,
+.phone-number-list {
+  color: $primary-font-color !important;
+}
+
+.social-media-section .fa-facebook-square {
+  color: $primary-font-color;
+}
+
+.social-media-section .fa-twitter-square {
+  color: $primary-font-color;
+}
+
+.social-media-section .fa-google-plus-square {
+  color: $primary-font-color;
+}
+
+.social-media-section .fa-youtube-square {
+  color: $primary-font-color;
+}
+
+.mobile-phone-btn a {
+  background-color: #52575a !important;
+}

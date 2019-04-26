@@ -1,0 +1,39 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+/* Team css general*/
+.team-section h1,
+.team-section h2,
+.team-section h3,
+.team-section h4,
+.team-section h5 {
+  color: $primary-font-color;
+}
+
+.team-section {
+  .thumbnail {
+    background-color: $primary-test-color;
+    border-radius: 0px;
+    border-color: $primary-border-color;
+    @include ui-shadow-no-hover;
+    height: 475px;
+    overflow: auto;
+    .caption {
+      color: $primary-font-color;
+      a {
+        color: $primary-font-color;
+      }
+      .fa {
+        margin-right: 5px;
+        color: $primary-font-color;
+      }
+      p {
+        color: $primary-font-color;
+      }
+    }
+  }
+}
+/* Management */
+
+/* Sales */
+
+/* Service */

@@ -1,0 +1,39 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+/* redesign full-cta buttons */
+
+#full-image-cta {
+  background-color: $secondary-test-color;
+}
+
+#full-image-cta .full-width-image-1 .cta-img-text {
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: solid thin #fff;
+}
+
+#full-image-cta .cta-img-item {
+  padding: 5px;
+}
+
+#full-image-cta .cta-img-bg-container {
+  @include ui-shadow-with-hover;
+}
+
+/* to change out darkoverlay */
+#full-image-cta .cta-img-gradient {
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+#full-image-cta .cta-img-text {
+  @include text-box-shadow;
+  font-weight: 500;
+}

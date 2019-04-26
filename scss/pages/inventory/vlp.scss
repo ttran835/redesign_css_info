@@ -1,0 +1,50 @@
+@import '_rolls2_css/scss/_custom.scss';
+/* Inventory page */
+.vdp .inventory-display-container {
+  background-color: $secondary-test-color !important;
+}
+
+.inventory-display-container .vlp-container > h1 {
+  color: $primary-font-color;
+}
+
+#vlp-search-panel .panel-body {
+  padding: 30px;
+}
+
+#vlp-search-results {
+  color: $primary-font-color;
+}
+
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+  color: #52575a !important;
+}
+
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  color: #52575a !important;
+}
+
+.btn-group > .btn:last-child:not(:first-child),
+.btn-group > .dropdown-toggle:not(:first-child) {
+  color: #52575a !important;
+}
+
+.comments-container {
+  color: $primary-font-color;
+}
+
+.comments-container #advertisement {
+  color: $primary-font-color;
+}
+
+.bx-prev,
+.bx-next,
+.slick-arrow {
+  z-index: 990 !important;
+}
+
+#vehicle-save-modal,
+#vehicle-save-login-modal,
+#vehicle-comparison-modal {
+  z-index: 10000 !important;
+}

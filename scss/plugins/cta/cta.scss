@@ -1,0 +1,41 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+#homepage-cta {
+  background-color: $primary-test-color !important;
+}
+
+#fc-cta-wrapper {
+  @include ui-shadow-with-hover;
+  background-color: transparent !important;
+  @include opacity-changer;
+  .fc-cta-btn-img .img-responsive {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    -o-transition: filter 0.5s;
+    transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s;
+  }
+  &:hover {
+    .fc-cta-btn-img .img-responsive {
+      -webkit-filter: none;
+      filter: none;
+    }
+  }
+}
+
+.cta-button-wrapper .cta-button {
+  border: solid 1px #fff;
+  background-color: rgba(0, 0, 0, 0.38);
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+  &:hover {
+    background-color: $primary-border-background-color !important;
+  }
+}
+
+.fc-cta-btn-img {
+  display: block;
+}
