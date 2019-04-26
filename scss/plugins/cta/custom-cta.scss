@@ -1,6 +1,10 @@
 #custom-cta {
   background-color: $primary-test-color;
-
+  .cta-containers {
+    @include screen-queries-min-width('lg') {
+      padding: 0 30px;
+    }
+  }
   .cta-img-panel {
     display: block;
     margin-left: auto;
@@ -10,16 +14,25 @@
     padding: 40px 15px;
     h2 {
       display: block;
-      margin: 25px 25px 5px;
+      position: relative;
+      margin-bottom: 25px;
       text-align: center;
       color: $secondary-font-color;
+      font-size: $cta-title-font-size;
+      font-weight: 400;
     }
     a {
       display: block;
+      position: relative;
       width: 70%;
       margin: 10px auto;
       text-align: center;
       @include a-tag-button-style;
+      border: 2px solid $primary-border-color;
+      font-weight: 560;
+      padding: 10px 25px 10px;
+      letter-spacing: normal;
+      text-transform: uppercase;
       @include text-box-shadow;
       color: $secondary-font-color;
     }
@@ -29,17 +42,36 @@
     background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @include ui-shadow-with-hover;
+    &:before {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: block;
+      content: ' ';
+      z-index: 0;
+      -webkit-transition: 0.5s ease;
+      transition: 0.5s ease;
+    }
+    &:hover::before {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 
   #finance-packages {
     background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @include ui-shadow-with-hover;
   }
 
   #why-us {
     background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    @include ui-shadow-with-hover;
   }
 }

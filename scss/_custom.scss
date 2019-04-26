@@ -20,6 +20,8 @@ $secondary-border-background-color: #333;
 $parallax-default-height: 500px;
 $title-font-size: 4rem;
 
+$cta-title-font-size: 2.3rem;
+
 @mixin page-title-border-box {
   background: rgba(0, 0, 0, 0.5);
   border: 3px solid $primary-border-color;
@@ -36,6 +38,7 @@ $title-font-size: 4rem;
   padding: 5px 25px 8px;
   letter-spacing: normal;
   text-transform: uppercase;
+  cursor: pointer;
   &:hover {
     color: $primary-font-color;
     background-color: $primary-border-color !important;
@@ -134,6 +137,7 @@ $breakpoints: (
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: none;
+  cursor: pointer;
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
     -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
