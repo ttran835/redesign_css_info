@@ -1,17 +1,24 @@
 /* redesign css for embed-vids */
 @import '_rolls2_css/scss/_custom.scss';
 
-.embed-video-container .oembed-video {
-  @include screen-queries-min-width(lg) {
-    padding: 21% 0;
-    margin: 2% 13% 0;
-  }
-}
-
-.embed-video-container .oembed-video iframe {
-  @include ui-shadow-no-hover;
-}
-
 #custom-yt-section {
-  background-color: $primary-test-color !important;
+  background-color: $secondary-test-color !important;
+  padding-bottom: 0 !important;
+  #embed-vid-title {
+    h3 {
+      padding-top: 25px;
+    }
+  }
+  .oembed-video-title {
+    padding-top: 20px !important;
+  }
+  .oembed-video {
+    @include screen-queries-min-width(lg) {
+      padding: 21% 0;
+      margin: 2% 13% 0;
+      iframe {
+        @include ui-shadow-no-hover;
+      }
+    }
+  }
 }

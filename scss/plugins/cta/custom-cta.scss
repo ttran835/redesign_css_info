@@ -1,5 +1,6 @@
 #custom-cta {
   background-color: $primary-test-color;
+  padding-bottom: 30px;
   .cta-containers {
     @include screen-queries-min-width('lg') {
       padding: 0 30px;

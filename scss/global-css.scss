@@ -1,8 +1,10 @@
 @import './custom';
 
 /* This will be used to change overall site's color variables */
+body {
+  overflow-x: hidden;
+}
 
-/* Dark background color update */
 .pg-body-wrap {
   background-color: $secondary-test-color;
 }
@@ -12,9 +14,11 @@
   color: $primary-font-color;
 }
 
-.content-container li,
-.content-container p {
+.content-container li {
   color: $primary-font-color;
+  p {
+    color: $primary-font-color;
+  }
 }
 
 .sbg-main-container {
