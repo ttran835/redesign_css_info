@@ -10,30 +10,37 @@
 }
 
 .team-section {
+  .team-container {
+    border-bottom: 2px solid #e8e8e8;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
   .thumbnail {
     background-color: $primary-test-color;
     border-radius: 0px;
     border-color: $primary-border-color;
-    @include ui-shadow-no-hover;
     height: 475px;
     overflow: auto;
     .caption {
       color: $primary-font-color;
+      h5 {
+        font-size: 3rem;
+      }
+      p {
+        color: $primary-font-color;
+      }
       a {
         color: $primary-font-color;
       }
       .fa {
         margin-right: 5px;
         color: $primary-font-color;
-      }
-      p {
-        color: $primary-font-color;
+        border: solid thin $primary-font-color;
+        padding: 4px;
       }
     }
   }
 }
-/* Management */
-
-/* Sales */
-
-/* Service */

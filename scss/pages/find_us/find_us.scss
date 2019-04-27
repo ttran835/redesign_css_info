@@ -3,17 +3,24 @@
 /* redesign for contact-us/find Us section */
 
 /* To set font to be visible on white background */
-.fa {
-  color: $primary-font-color;
-}
 
-#methods-content h3,
-#methods-content p {
-  color: $primary-font-color;
-}
-
-#methods-content .contents {
-  margin: 5px 0;
+#methods-content {
+  #find-us-content {
+    .fa {
+      color: $primary-font-color;
+    }
+    h3 {
+      color: $primary-font-color;
+      margin: 10px;
+    }
+    p {
+      color: $primary-font-color;
+      margin-bottom: 20px;
+    }
+    .contents {
+      margin: 5px 0;
+    }
+  }
 }
 
 .gform_title {
@@ -22,8 +29,7 @@
 
 #gmap_canvas_container {
   padding: 20px 0;
-}
-
-#gmap_canvas_container #gmap_canvas {
-  @include ui-shadow-no-hover;
+  #gmap_canvas {
+    @include ui-shadow-no-hover;
+  }
 }

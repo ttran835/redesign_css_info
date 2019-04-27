@@ -1,9 +1,17 @@
 @import '_rolls2_css/scss/_custom.scss';
 
 /* The shelley automotive group */
+/* This section uses some css   */
+/* styling from parallax        */
 
-#founders-content h2,
-#founders-content h3,
-#founders-content p {
-  color: $primary-font-color;
+#parallax {
+  #shelley-group-parallax {
+    padding: 15px;
+  }
+}
+
+#shelley-content {
+  h4 {
+    margin-bottom: 20px;
+  }
 }

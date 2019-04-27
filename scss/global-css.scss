@@ -5,12 +5,19 @@ body {
   overflow-x: hidden;
 }
 
+#page-title-container {
+  background-color: $primary-test-color;
+  .fc-page-title {
+    background-color: $primary-test-color;
+  }
+}
+
 .pg-body-wrap {
-  background-color: $secondary-test-color;
+  background-color: $primary-test-color;
 }
 
 .fc-page-title {
-  background-color: $secondary-test-color;
+  background-color: $primary-test-color;
   color: $primary-font-color;
 }
 
@@ -22,7 +29,7 @@ body {
 }
 
 .sbg-main-container {
-  border-top: 5px solid $secondary-test-color;
+  border-top: 5px solid $primary-test-color;
 }
 
 .gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label {
