@@ -1,0 +1,37 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+/* latest news design for homepage */
+
+#latest-news {
+  background-color: $secondary-test-color;
+  margin-top: 10px;
+  @include screen-queries-min-width('md') {
+    margin-top: 40px;
+  }
+  h3 {
+    font-size: $title-font-size;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #latest-news-content {
+    .article {
+      margin-bottom: 30px;
+      .news-title {
+        font-size: 2rem;
+        color: $primary-font-color;
+        min-height: 4rem;
+        text-align: start;
+      }
+      p {
+        color: $primary-font-color;
+        text-align: start;
+        margin: 20px 0 0;
+      }
+      img {
+        @include screen-queries-min-width('md') {
+          max-height: 220px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import '_rolls2_css/scss/_custom.scss';
+
+/* PM discloure */
+
+#disclosure-section {
+  background-color: $secondary-test-color;
+  padding-top: 10px;
+  color: $secondary-font-color;
+  @include screen-queries-min-width('md') {
+    padding-top: 40px;
+  }
+  h3 {
+    font-weight: 600;
+    line-height: 24px;
+    padding: 20px 0;
+    color: inherit;
+  }
+  p {
+    font-weight: 600;
+    color: inherit;
+    line-height: 24px;
+    padding-bottom: 10px;
+  }
+}

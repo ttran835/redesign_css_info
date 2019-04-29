@@ -16,6 +16,9 @@ $primary-border-section-color: #d5d5d5;
 $primary-border-background-color: #000;
 $secondary-border-background-color: #333;
 
+$inventory-primary-color: #fefefe;
+$inventory-secondary-color: #fff;
+
 /* content to keep site consistent */
 $parallax-default-height: 500px;
 $title-font-size: 4rem;
@@ -23,9 +26,19 @@ $title-font-size: 4rem;
 $cta-title-font-size: 2.3rem;
 
 @mixin page-title-border-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.5);
   border: 3px solid $primary-border-color;
-  padding: 30px 30px 11px;
+  padding: 30px 30px 25px;
   padding-top: 0;
 }
 
@@ -39,6 +52,7 @@ $cta-title-font-size: 2.3rem;
   letter-spacing: normal;
   text-transform: uppercase;
   cursor: pointer;
+  color: $secondary-font-color;
   &:hover {
     color: $primary-font-color;
     background-color: $primary-border-color !important;
@@ -72,7 +86,7 @@ $breakpoints: (
 @mixin screen-queries-max-width($breakpoint) {
   @if map-has-key($breakpoints, $breakpoint) {
     $breakpoint-value: map-get($breakpoints, $breakpoint);
-    @media (min-width: $breakpoint-value) {
+    @media (max-width: $breakpoint-value) {
       @content;
     }
   }
@@ -119,7 +133,11 @@ $breakpoints: (
 @mixin gray-img-filter {
   -webkit-filter: none;
   filter: none;
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  -o-transition: filter 0.5s;
   transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
   &:hover {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);

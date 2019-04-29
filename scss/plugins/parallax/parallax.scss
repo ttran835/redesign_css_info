@@ -1,11 +1,9 @@
 @import '_rolls2_css/scss/_custom.scss';
 
 /* change parallax contents on all pages */
-#parallax {
-  height: $parallax-default-height;
-}
 
 #parallax {
+  height: $parallax-default-height;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,16 +13,20 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
 
-#parallax h1 {
-  color: $secondary-font-color;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 0px;
-}
-
-#parallax .page-title-border-box {
-  @include page-title-border-box;
-  @include ui-shadow-no-hover;
+  .page-title-border-box {
+    h1 {
+      color: $secondary-font-color;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0px;
+      margin: 20px 0;
+    }
+    @include page-title-border-box;
+    @include ui-shadow-no-hover;
+    a {
+      @include text-box-shadow;
+      @include a-tag-button-style;
+    }
+  }
 }
