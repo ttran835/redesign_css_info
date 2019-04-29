@@ -4,6 +4,26 @@
   #inventory-display-container {
     background-color: $inventory-primary-color !important;
   }
+  #vlp-filters {
+    @include screen-queries-min-width('md') {
+      position: sticky;
+      z-index: 99;
+      padding: 118px 0 15px 15px;
+      left: 0;
+      top: 11vh;
+      max-width: 100%;
+      background: #fff;
+      opacity: 1;
+      box-shadow: none;
+      border-bottom: 20px solid #314354;
+      -webkit-transition: left 0.5s ease-in-out;
+      transition: left 0.5s ease-in-out;
+      height: 91vh;
+      overflow-y: auto;
+      right: 18px;
+      padding-top: 0;
+    }
+  }
   .cta-button-list {
     margin: 10px 0;
     .cta-button {
