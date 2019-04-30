@@ -1,20 +1,20 @@
 @import '_rolls2_css/scss/_custom.scss';
 /* Footer */
 .footer {
-  background-color: $primary-test-color;
+  background-color: #000;
   border-top: none !important;
-}
-
-.footer .footer-left .footer-link,
-.footer p {
-  color: #959493 !important;
-  font-weight: bold !important;
+        & > p {
+          color: #959493 !important;
+          font-weight: bold !important;
+        }
+      }
+    }
+  }
 }
 
 #pm-disclaimer {
-  background-color: $primary-test-color;
-}
-
-#pm-disclaimer h4 {
-  color: #959493 !important;
+  background-color: #000;
+  h4 {
+    color: #959493 !important;
+  }
 }

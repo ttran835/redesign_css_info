@@ -1,11 +1,15 @@
 @import '_rolls2_css/scss/_custom.scss';
 
-.header .dealer-name-static {
-  font-size: 17px !important;
+.header {
+  padding-top: 45px !important;
+  padding-bottom: 0 !important;
+  .dealer-name-static {
+    font-size: 17px !important;
+  }
 }
 
-.header {
-  background-color: #44424b !important;
+#my-vehicles-toolbar {
+  background-color: #000 !important;
 }
 
 .dealer-name-static,
@@ -13,22 +17,25 @@
   color: $primary-font-color !important;
 }
 
-.social-media-section .fa-facebook-square {
-  color: $primary-font-color;
-}
-
-.social-media-section .fa-twitter-square {
-  color: $primary-font-color;
-}
-
-.social-media-section .fa-google-plus-square {
-  color: $primary-font-color;
-}
-
-.social-media-section .fa-youtube-square {
-  color: $primary-font-color;
-}
-
-.mobile-phone-btn a {
-  background-color: #52575a !important;
+.social-media-section {
+  .fa-facebook-square {
+    color: $primary-font-color;
+  }
+  .fa-twitter-square {
+    color: $primary-font-color;
+  }
+  .fa-google-plus-square {
+    color: $primary-font-color;
+  }
+  .fa-youtube-square {
+    color: $primary-font-color;
+  }
+  .fa-instagram {
+    color: $primary-font-color !important;
+  }
+  .mobile-phone-btn {
+    a {
+      background-color: #52575a !important;
+    }
+  }
 }
