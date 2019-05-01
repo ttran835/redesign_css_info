@@ -3,12 +3,9 @@
 .footer {
   background-color: #000;
   border-top: none !important;
-        & > p {
-          color: #959493 !important;
-          font-weight: bold !important;
-        }
-      }
-    }
+  & > p {
+    color: #959493 !important;
+    font-weight: bold !important;
   }
 }
 
