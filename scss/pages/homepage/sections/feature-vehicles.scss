@@ -12,6 +12,8 @@
           @include gray-img-filter;
           img {
             @include ui-shadow-no-hover;
+            width: 100%;
+            margin: 0;
           }
           .reference-overlay {
             display: block;
@@ -19,10 +21,9 @@
             z-index: 20;
             background: rgba(0, 0, 0, 0.4);
             overflow: hidden;
-            left: 27px;
-            bottom: 20px;
-            right: 0px;
-            width: 84.5%;
+            left: 0;
+            bottom: 0;
+            width: 99.5%;
             height: 0;
             -webkit-transition: all 0.5s;
             -o-transition: all 0.5s;
@@ -44,7 +45,7 @@
             }
           }
           &:hover .reference-overlay {
-            height: 92.3%;
+            height: 100%;
           }
         }
         &:focus {
