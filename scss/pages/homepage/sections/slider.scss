@@ -6,8 +6,6 @@
   background-color: $primary-test-color;
   .slider-fade {
     @include ui-shadow-no-hover;
-    .slick-slider {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
   }
 }

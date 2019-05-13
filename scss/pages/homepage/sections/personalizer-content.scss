@@ -13,11 +13,24 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  @include screen-queries-min-width(sm) {
+  @include screen-queries-min-width('sm') {
     position: absolute;
-    top: 50%;
-    left: 35%;
+    top: 35%;
+    left: 23.5%;
+  }
+  @include screen-queries-min-width('md') {
+    position: absolute;
+    top: 25%;
+    left: 19.5%;
+  }
+  @include screen-queries-min-width('lg') {
+    position: absolute;
+    top: 40%;
+    left: 32.5%;
     @include ui-shadow-with-hover;
+  }
+  @media (max-width: 767px) {
+    background-color: transparent;
   }
   @include page-title-border-box;
   .title {
@@ -27,15 +40,43 @@
     color: $secondary-font-color;
     text-align: center;
   }
-  .message {
-    font-size: 2.3rem;
-    color: $secondary-font-color;
+  h1 {
+    width: 29rem;
     text-align: center;
-  }
-  a {
-    @include a-tag-button-style;
+    color: $primary-font-color;
+    padding-top: 25px;
+    @include screen-queries-min-width('sm') {
+      display: none;
+    }
   }
   p {
-    margin: 25px;
+    text-align: center;
+    margin-bottom: 40px;
+    img {
+      display: none;
+      margin: 20px;
+      width: 400px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        display: block;
+        margin: 15px;
+        width: 385px;
+      }
+      @include screen-queries-min-width('md') {
+        display: block;
+        width: auto;
+      }
+    }
+
+    a {
+      @include a-tag-button-style;
+      @media (max-width: 767px) {
+        color: $primary-font-color;
+        border-color: $primary-border-background-color;
+      }
+      margin: 0 40px 40px;
+      @media (min-width: 768px) and (max-width: 991px) {
+        margin: 0 40px 15px;
+      }
+    }
   }
 }
