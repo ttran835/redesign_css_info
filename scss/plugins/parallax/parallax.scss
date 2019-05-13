@@ -13,20 +13,101 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
+  @include screen-queries-min-width('sm') {
+    height: 25vh;
+  }
+  @include screen-queries-min-width('lg') {
+    height: $parallax-default-height;
+  }
   .page-title-border-box {
+    position: relative;
     h1 {
+      position: relative;
+      font-size: $title-font-size-mobile;
+      font-weight: 480;
       color: $secondary-font-color;
       text-align: center;
       text-transform: uppercase;
-      padding: 0px;
-      margin: 20px 0;
+      padding: 30px 15px;
+      width: 12em;
+      @include screen-queries-min-width('sm') {
+        font-size: 2.2em;
+        padding: 15px 15px;
+      }
+      @include screen-queries-min-width('md') {
+        width: 12em;
+        font-size: 2.5em;
+      }
     }
     @include page-title-border-box;
+    padding: 0px 20px;
     @include ui-shadow-no-hover;
     a {
       @include text-box-shadow;
       @include a-tag-button-style;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 34rem;
+      left: -15%;
+    }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      width: 40rem;
+      left: -5%;
+    }
+  }
+}
+
+/* Custom css for shelley automotive group parallax */
+#parallax-shelley {
+  height: $parallax-default-height;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  @include screen-queries-min-width('sm') {
+    height: 25vh;
+  }
+  @include screen-queries-min-width('lg') {
+    height: $parallax-default-height;
+  }
+  .page-title-border-box {
+    h1 {
+      font-size: $title-font-size-mobile;
+      font-weight: 480;
+      color: $secondary-font-color;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 30px 15px;
+      width: 12.4em;
+      @include screen-queries-min-width('sm') {
+        font-size: 2.5em;
+        padding: 15px 15px;
+      }
+      @include screen-queries-min-width('md') {
+        width: 12em;
+        font-size: $title-font-size;
+      }
+    }
+    @include page-title-border-box;
+    border: 2px solid #fff;
+    @include ui-shadow-no-hover;
+    a {
+      @include screen-queries-min-width('lg') {
+        padding: 25px;
+      }
+      .img-responsive {
+        margin: 0;
+      }
+      padding: 10px 15px;
+      border: none;
+      @include text-box-shadow;
+      @include a-tag-button-style;
+      padding: 15px;
     }
   }
 }

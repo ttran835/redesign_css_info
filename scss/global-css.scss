@@ -5,16 +5,6 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  position: relative;
-  z-index: 999;
-}
-
-#my-vehicles-toolbar {
-  position: sticky;
-  z-index: 9999;
-}
-
 #page-title-container {
   background-color: $primary-test-color;
   .fc-page-title {
