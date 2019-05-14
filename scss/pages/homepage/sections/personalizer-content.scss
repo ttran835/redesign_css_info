@@ -1,81 +1,83 @@
 @import '_rolls2_css/scss/_custom.scss';
 
 /* Title Personalizer */
-
-#personalized-message {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  @include screen-queries-min-width('sm') {
-    position: absolute;
-    top: 35%;
-    left: 23.5%;
-  }
-  @include screen-queries-min-width('md') {
-    position: absolute;
-    top: 25%;
-    left: 19.5%;
-  }
-  @include screen-queries-min-width('lg') {
-    position: absolute;
-    top: 40%;
-    left: 32.5%;
-    @include ui-shadow-with-hover;
-  }
-  @media (max-width: 767px) {
-    background-color: transparent;
-  }
-  @include page-title-border-box;
-  .title {
-    font-size: $title-font-size;
-    margin: 10px 0 0 0;
-    padding: 15px;
-    color: $secondary-font-color;
-    text-align: center;
-  }
-  h1 {
-    width: 29rem;
-    text-align: center;
-    color: $primary-font-color;
-    padding-top: 25px;
+#personalizer {
+  margin-top: 13rem;
+  #personalized-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     @include screen-queries-min-width('sm') {
-      display: none;
+      position: absolute;
+      top: 20%;
+      left: 23.5%;
     }
-  }
-  p {
-    text-align: center;
-    margin-bottom: 40px;
-    img {
-      display: none;
-      margin: 20px;
-      width: 400px;
-      @media (min-width: 768px) and (max-width: 991px) {
-        display: block;
-        margin: 15px;
-        width: 385px;
-      }
-      @include screen-queries-min-width('md') {
-        display: block;
-        width: auto;
+    @include screen-queries-min-width('md') {
+      position: absolute;
+      top: 17%;
+      left: 19.5%;
+    }
+    @include screen-queries-min-width('lg') {
+      position: absolute;
+      top: 40%;
+      left: 32.5%;
+      @include ui-shadow-with-hover;
+    }
+    @media (max-width: 767px) {
+      background-color: transparent;
+    }
+    @include page-title-border-box;
+    .title {
+      font-size: $title-font-size;
+      margin: 10px 0 0 0;
+      padding: 15px;
+      color: $secondary-font-color;
+      text-align: center;
+    }
+    h1 {
+      width: 29rem;
+      text-align: center;
+      color: $primary-font-color;
+      padding-top: 25px;
+      @include screen-queries-min-width('sm') {
+        display: none;
       }
     }
+    p {
+      text-align: center;
+      margin-bottom: 40px;
+      img {
+        display: none;
+        margin: 20px;
+        width: 400px;
+        @media (min-width: 768px) and (max-width: 991px) {
+          display: block;
+          margin: 15px;
+          width: 385px;
+        }
+        @include screen-queries-min-width('md') {
+          display: block;
+          width: auto;
+        }
+      }
 
-    a {
-      @include a-tag-button-style;
-      @media (max-width: 767px) {
-        color: $primary-font-color;
-        border-color: $primary-border-background-color;
-      }
-      margin: 0 40px 40px;
-      @media (min-width: 768px) and (max-width: 991px) {
-        margin: 0 40px 15px;
+      a {
+        @include a-tag-button-style;
+        @media (max-width: 767px) {
+          color: $primary-font-color;
+          border-color: $primary-border-background-color;
+        }
+        margin: 0 40px 40px;
+        @media (min-width: 768px) and (max-width: 991px) {
+          margin: 0 40px 15px;
+        }
       }
     }
   }

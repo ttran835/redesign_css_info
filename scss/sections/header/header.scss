@@ -1,23 +1,28 @@
 @import '_rolls2_css/scss/_custom.scss';
 
 #my-vehicles-toolbar {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   z-index: 9999;
   /* to hide the tool bar since rolls might not want it */
   display: none;
 }
 
 .header {
-  position: sticky;
+  position: fixed;
   z-index: 999;
   top: 0;
+  left: 0rem;
+  width: 100%;
   padding: 0 !important;
   .header-column {
     padding-top: 15px;
-  }
-
-  .dealer-name-static {
-    font-size: 17px !important;
+    .dealer-logo-static {
+      padding-top: 0;
+    }
+    .dealer-contact-group {
+      padding-top: 10px;
+    }
   }
 }
 

@@ -13,7 +13,9 @@ body {
 }
 
 .pg-body-wrap {
+  padding-top: 14vh;
   background-color: $primary-test-color;
+  overflow-x: hidden;
 }
 
 .fc-page-title {
