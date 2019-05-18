@@ -2,7 +2,7 @@
 
 /* Title Personalizer */
 #personalizer {
-  margin-top: 13rem;
+  position: relative;
   #personalized-message {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -14,22 +14,15 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
     @include screen-queries-min-width('sm') {
       position: absolute;
-      top: 20%;
-      left: 23.5%;
-    }
-    @include screen-queries-min-width('md') {
-      position: absolute;
-      top: 17%;
-      left: 19.5%;
-    }
-    @include screen-queries-min-width('lg') {
-      position: absolute;
-      top: 40%;
-      left: 32.5%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       @include ui-shadow-with-hover;
     }
+
     @media (max-width: 767px) {
       background-color: transparent;
     }

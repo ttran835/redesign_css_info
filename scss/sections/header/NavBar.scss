@@ -1,13 +1,34 @@
 @import '_rolls2_css/scss/_custom.scss';
 /* NavBar Changes */
 .navbar {
-  position: fixed !important;
-  top: 80px;
+  position: sticky !important;
+  top: 0;
   overflow-y: auto;
   @include ui-shadow-no-hover;
   @include screen-queries-min-width('sm') {
     position: fixed !important;
     overflow: visible;
+  }
+  ul.navbar-nav {
+    padding-top: 15px;
+    li {
+      text-transform: uppercase;
+    }
+  }
+
+  .navbar-logo {
+    position: relative;
+    display: block;
+    @include screen-queries-min-width('md') {
+      display: none;
+    }
+  }
+
+  .navbar-brand {
+    display: none;
+    @include screen-queries-min-width('md') {
+      display: block;
+    }
   }
 }
 

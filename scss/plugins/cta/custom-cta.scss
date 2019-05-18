@@ -37,12 +37,6 @@
       @include text-box-shadow;
       color: $secondary-font-color;
     }
-  }
-
-  #sell-your-car {
-    background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     @include ui-shadow-with-hover;
     &:before {
       background-color: rgba(0, 0, 0, 0.5);
@@ -62,17 +56,27 @@
     }
   }
 
-  #finance-packages {
-    background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
+  #black-badge {
+    background-image: url('/wp-content/uploads/2019/05/Black-Badge-Dawn-SOE-Static-Exterior-Side-Image-min-e1558135273471.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    @include ui-shadow-with-hover;
+  }
+
+  #finance-packages {
+    background-image: url('/wp-content/uploads/2019/05/Cullinan-Multiple-Car-Cabin-Static-Exterior-Image-Press-Drive-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     @include ui-shadow-with-hover;
   }
 
   #why-us {
-    background-image: url('http://rolls-roycemotorcarsoc-local.com/wp-content/uploads/2019/04/culligan_2019.jpg');
+    background-image: url('/wp-content/uploads/2019/05/HomePageBanner-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     @include ui-shadow-with-hover;
   }
 }

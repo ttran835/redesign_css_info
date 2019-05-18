@@ -8,24 +8,6 @@
   display: none;
 }
 
-.header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0rem;
-  width: 100%;
-  padding: 0 !important;
-  .header-column {
-    padding-top: 15px;
-    .dealer-logo-static {
-      padding-top: 0;
-    }
-    .dealer-contact-group {
-      padding-top: 10px;
-    }
-  }
-}
-
 #my-vehicles-toolbar {
   background-color: #000 !important;
 }
