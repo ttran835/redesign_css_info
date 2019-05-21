@@ -5,7 +5,7 @@
   #inventory-display-container {
     background-color: $inventory-primary-color !important;
     #vlp-filters {
-      margin-top: 4rem;
+      margin-top: 0;
       @include screen-queries-min-width('md') {
         margin-top: 0;
       }
@@ -46,6 +46,15 @@
           column-count: 2;
           -webkit-column-count: 2;
           -moz-column-count: 2;
+        }
+        .fa-check-square-o {
+          display: none;
+        }
+        .fa-square-o {
+          display: none;
+        }
+        .pull-right {
+          display: none;
         }
       }
       #latest-arrival {
@@ -114,12 +123,12 @@
         padding-top: 0;
         @include screen-queries-min-width('lg') {
           width: 20%;
-          top: 12vh;
-          height: 88vh;
+          top: 15vh;
+          height: 85vh;
         }
         @include screen-queries-min-width('xtra-lg') {
-          top: 10vh;
-          height: 90vh;
+          top: 13vh;
+          height: 87vh;
         }
       }
     }
@@ -170,7 +179,7 @@
       }
     }
     #vlp-content {
-      padding-top: 5vh;
+      padding-top: 0;
     }
   }
 }
