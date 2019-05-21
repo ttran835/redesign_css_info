@@ -3,14 +3,11 @@
 .navbar {
   position: sticky !important;
   top: 0;
-  overflow-y: auto;
+  overflow-y: visible;
   @include ui-shadow-no-hover;
-  @include screen-queries-min-width('sm') {
-    position: fixed !important;
-    overflow: visible;
-  }
+
   ul.navbar-nav {
-    padding-top: 15px;
+    padding: 4vh 0vh 0vh 6vh;
     li {
       text-transform: uppercase;
     }
@@ -22,12 +19,23 @@
     @include screen-queries-min-width('md') {
       display: none;
     }
+    img {
+      margin: auto;
+    }
   }
 
   .navbar-brand {
     display: none;
     @include screen-queries-min-width('md') {
       display: block;
+    }
+  }
+  #contact-info {
+    padding-top: 3vh;
+    p {
+      font-size: 2.6rem;
+      text-align: end;
+      font-weight: 550;
     }
   }
 }
