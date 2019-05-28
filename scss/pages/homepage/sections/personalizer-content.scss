@@ -23,6 +23,11 @@
       transform: translate(-50%, -50%);
       @include ui-shadow-with-hover;
     }
+    @include screen-queries-min-width('lg') {
+      img {
+        height: 300px;
+      }
+    }
 
     @media (max-width: 1023px) {
       background-color: transparent;

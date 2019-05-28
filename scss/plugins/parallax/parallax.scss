@@ -28,7 +28,7 @@
       color: $secondary-font-color;
       text-align: center;
       text-transform: uppercase;
-      padding: 30px 15px;
+      padding: 0 15px;
       width: 12em;
       @include screen-queries-min-width('sm') {
         font-size: 2.2em;
@@ -36,11 +36,11 @@
       }
       @include screen-queries-min-width('md') {
         width: 12em;
-        font-size: 2.5em;
+        font-size: 3.5em;
       }
     }
     @include page-title-border-box;
-    padding: 0px 20px;
+    padding: 20px;
     @include ui-shadow-no-hover;
     a {
       @include text-box-shadow;

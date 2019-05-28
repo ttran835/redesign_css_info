@@ -7,17 +7,25 @@
   @include ui-shadow-no-hover;
 
   ul.navbar-nav {
-    padding: 4vh 0vh 0vh 6vh;
+    @include screen-queries-min-width('md') {
+      padding: 4vh 0vh 0vh 6vh;
+    }
     li {
       text-transform: uppercase;
+      border-bottom: solid thin #000;
+      @include screen-queries-min-width('md') {
+        border-bottom: none;
+      }
     }
   }
 
   .navbar-logo {
     position: relative;
     display: block;
+    margin-bottom: -50px;
     @include screen-queries-min-width('md') {
       display: none;
+      margin-bottom: 0;
     }
     img {
       margin: auto;

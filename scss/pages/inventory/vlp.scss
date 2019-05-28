@@ -40,6 +40,13 @@
         button {
           border-radius: 0;
         }
+
+        button#adv-search-button {
+          display: none;
+        }
+        button#reset-search {
+          display: none;
+        }
       }
       #refine-search {
         ul.list-unstyled {
