@@ -1,6 +1,8 @@
 @import '_rolls2_css/scss/_custom.scss';
 
 /* Team css general*/
+$description-p-color: #767676;
+
 .team-section h1,
 .team-section h2,
 .team-section h3,
@@ -28,7 +30,12 @@
         font-size: 3rem;
       }
       p {
-        color: $primary-font-color;
+        color: $description-p-color;
+        font-size: 1em;
+        .title {
+          font-size: 0.9em !important;
+          color: $description-p-color;
+        }
       }
       a {
         color: $primary-font-color;

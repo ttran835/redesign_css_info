@@ -1,65 +1,148 @@
 @import '_rolls2_css/scss/_custom.scss';
 /* NavBar Changes */
-.navbar {
+#custom-header {
+  position: -webkit-sticky !important;
   position: sticky !important;
+  display: block;
+  z-index: 9999;
+  background-color: #fff;
   top: 0;
   overflow-y: visible;
   @include ui-shadow-no-hover;
 
-  ul.navbar-nav {
-    @include screen-queries-min-width('md') {
-      padding: 4vh 0vh 0vh 6vh;
-    }
-    li {
-      text-transform: uppercase;
-      border-bottom: solid thin #000;
-      @include screen-queries-min-width('md') {
-        border-bottom: none;
-      }
-    }
-  }
-
-  .navbar-logo {
+  .navbar-logo-mobile {
     position: relative;
     display: block;
-    margin-bottom: -50px;
+    margin-bottom: -70px;
+    & > img.img-responsive {
+      margin: auto;
+    }
+    @media (max-width: 767px) {
+      img.img-responsive {
+        height: 74px;
+        width: 200px;
+      }
+    }
     @include screen-queries-min-width('md') {
       display: none;
       margin-bottom: 0;
     }
+  }
+
+  .navbar-logo-desktop {
+    display: none;
     img {
-      margin: auto;
+      width: 25vh;
+    }
+    @include screen-queries-min-width('md') {
+      display: block;
+      padding: 0 1vw;
     }
   }
 
-  .navbar-brand {
-    display: none;
-    @include screen-queries-min-width('md') {
-      display: block;
+  .navbar {
+    z-index: 999;
+    background-color: transparent !important;
+    ul.navbar-nav {
+      padding: 2vh 0vw 0vh 2vw;
+      @media (min-width: 1366px) {
+        padding: 2vh 0vw 0vh 6vw;
+      }
+      li {
+        text-transform: uppercase;
+        border-bottom: solid thin #000;
+        @include screen-queries-min-width('lg') {
+          border-bottom: none;
+        }
+      }
+    }
+    .navbar-directions {
+      display: none;
     }
   }
-  #contact-info {
-    padding-top: 3vh;
-    p {
-      font-size: 2.6rem;
-      text-align: end;
-      font-weight: 550;
+
+  #phone-and-social {
+    display: block;
+    top: 10px;
+    padding: 1vh 1vw;
+    margin-top: 1vh;
+    -webkit-box-shadow: 0px 2px 11px -6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 11px -6px rgba(0, 0, 0, 0.25);
+    @include screen-queries-min-width('md') {
+      -webkit-box-shadow: none;
+      box-shadow: none;
     }
+    #phone {
+      font-size: 1.3em;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      @include screen-queries-min-width('lg') {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.5em;
+      }
+    }
+
+    #social-media {
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      a {
+        padding: 0 5px;
+        font-size: 1.6em;
+        .fa {
+          color: $primary-font-color;
+        }
+        @include screen-queries-min-width('lg') {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+  @include screen-queries-min-width('md') {
+    padding-bottom: 5px;
   }
 }
 
-// .navbar-inverse {
-//   background-color: #52575a !important;
-// }
-
-// .navbar-nav .dropdown-menu {
-//   background-color: #202121 !important;
-// }
-
-// .navbar-nav .dropdown-menu li a {
-//   color: $primary-font-color !important;
-// }
-
-// .navbar-nav .dropdown-menu li:hover {
-//   background-color: $primary-test-color !important;
-// }
+/* to have navbar collapse on ipad and ipad pro */
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navbar-text {
+    float: none;
+    margin: 15px 0;
+  }
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .collapsing {
+    overflow: hidden !important;
+  }
+}

@@ -54,10 +54,7 @@
           -webkit-column-count: 2;
           -moz-column-count: 2;
         }
-        .fa-check-square-o {
-          display: none;
-        }
-        .fa-square-o {
+        .fa {
           display: none;
         }
         .pull-right {
@@ -187,6 +184,14 @@
     }
     #vlp-content {
       padding-top: 0;
+    }
+  }
+  #dealer-comments {
+    h4 {
+      font-size: 0.8em;
+    }
+    p {
+      font-size: 0.7em;
     }
   }
 }
