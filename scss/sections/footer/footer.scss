@@ -1,17 +1,46 @@
 @import '_rolls2_css/scss/_custom.scss';
 /* Footer */
+
+$footer-font-color: #959493;
+
 .footer {
   background-color: #000;
   border-top: none !important;
+  padding-bottom: 30px;
   & > p {
-    color: #959493 !important;
+    color: $footer-font-color !important;
     font-weight: bold !important;
   }
   .footer-left {
     p {
-      color: #959493;
+      font-size: 1.3em;
+      color: $footer-font-color;
       a {
-        color: #959493;
+        color: $footer-font-color;
+      }
+    }
+    ul.footer-list {
+      li {
+        padding: 0.35vh 0;
+        color: $footer-font-color;
+        a {
+          color: $footer-font-color;
+        }
+
+        ul.sub-items {
+          padding-left: 1vw;
+        }
+      }
+    }
+    #social-media {
+      display: flex;
+      flex-direction: column;
+      li {
+        .fa {
+          padding-right: 0.6vw;
+          font-size: 1.6em;
+          color: $footer-font-color;
+        }
       }
     }
   }
@@ -20,6 +49,6 @@
 #pm-disclaimer {
   background-color: #000;
   h4 {
-    color: #959493 !important;
+    color: $footer-font-color !important;
   }
 }
