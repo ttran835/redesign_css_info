@@ -44,15 +44,19 @@
     z-index: 999;
     background-color: transparent !important;
     ul.navbar-nav {
-      padding: 2vh 0vw 0vh 2vw;
+      padding: 2vh 0vw 0vh 3vw;
       @media (min-width: 1366px) {
         padding: 2vh 0vw 0vh 6vw;
       }
       li {
+        // padding-right: 0 !important;
         text-transform: uppercase;
         border-bottom: solid thin #000;
         @include screen-queries-min-width('lg') {
           border-bottom: none;
+          a {
+            padding-right: 20px !important;
+          }
         }
       }
     }
@@ -73,7 +77,7 @@
       box-shadow: none;
     }
     #phone {
-      font-size: 1.3em;
+      font-size: 1.2em;
       font-weight: 600;
       letter-spacing: 0.04em;
       @include screen-queries-min-width('lg') {

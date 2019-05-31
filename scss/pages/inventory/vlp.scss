@@ -1,5 +1,8 @@
 @import '_rolls2_css/scss/_custom.scss';
 /* Inventory page VLP */
+
+$vlp-font-color: #999999;
+
 .vdp {
   background-color: $inventory-primary-color;
   #inventory-display-container {
@@ -127,8 +130,8 @@
         padding-top: 0;
         @include screen-queries-min-width('lg') {
           width: 20%;
-          top: 15vh;
-          height: 85vh;
+          top: 12vh;
+          height: 88vh;
         }
         @include screen-queries-min-width('xtra-lg') {
           top: 13vh;
@@ -157,10 +160,26 @@
       .vlp-item {
         background-color: $inventory-primary-color;
         border: none;
-        border-bottom: solid thin #ebebeb;
+        border-bottom: solid thin #dbdbd;
         border-radius: 0;
         box-shadow: none;
+
+        #vehicle-info-wrapper {
+          h2 {
+            font-size: 1.4em;
+            font-weight: 500;
+            color: $vlp-font-color;
+          }
+          .pricing-block {
+            h4 {
+              color: $vlp-font-color;
+              font-weight: 500;
+              font-size: 1.4em;
+            }
+          }
+        }
       }
+
       .btn-group {
         margin-top: 0;
         .btn {
@@ -181,9 +200,18 @@
           }
         }
       }
+      .panel {
+        padding: 0;
+      }
     }
     #vlp-content {
       padding-top: 0;
+    }
+    h1#inventory-page-title {
+      border-bottom: solid thin #dbdbdb;
+      color: $vlp-font-color;
+      font-size: 1.5em;
+      margin-bottom: 5vh;
     }
   }
   #dealer-comments {
