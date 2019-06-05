@@ -44,15 +44,26 @@ $footer-font-color: #959493;
       }
     }
   }
-  .footer-right {
-    #logo-and-address {
-      img {
-        height: 215px;
+
+  #logo-and-address {
+    img {
+      height: 215px;
+    }
+    p {
+      color: $footer-font-color;
+      font-size: 1.4em;
+      text-align: center;
+      @include screen-queries-min-width('sm') {
+        padding: 1vh 2vw 1vh 14vw;
+        text-align: end;
       }
-      p {
-        color: $footer-font-color;
-        font-size: 1.4em;
-        padding: 1vh 2vw 1vh 1vw;
+      @include screen-queries-min-width('md') {
+        padding: 1vh 7vw 1vh 17vw;
+        text-align: center;
+      }
+      @include screen-queries-min-width('lg') {
+        text-align: end;
+        padding: 1vh 1vw 1vh 15vw;
       }
     }
   }
