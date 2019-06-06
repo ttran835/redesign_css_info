@@ -26,6 +26,45 @@ $title-font-size-mobile: 2em;
 
 $cta-title-font-size: 2.3rem;
 
+@font-face {
+  font-family: 'Proxima-Reg';
+  src: url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Regular/ProximaNova-regular.eot');
+  src: url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Regular/ProximaNova-regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Regular/ProximaNova-regular.woff')
+      format('woff'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Regular/ProximaNova-regular.woff2')
+      format('woff2'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Regular/ProximaNova-regular.ttf')
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'Proxima-Semi';
+  src: url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Semibold/ProximaNova-Semibold.eot');
+  src: url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Semibold/ProximaNova-Semibold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Semibold/ProximaNova-Semibold.woff')
+      format('woff'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Semibold/ProximaNova-Semibold.woff2')
+      format('woff2'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Semibold/ProximaNova-Semibold.ttf')
+      format('truetype');
+}
+
+@font-face {
+  font-family: 'Proxima-Bold';
+  src: url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Bold/ProximaNova-Bold.eot');
+  src: url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Bold/ProximaNova-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Bold/ProximaNova-Bold.woff')
+      format('woff'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Bold/ProximaNova-Bold.woff2')
+      format('woff2'),
+    url('/wp-content/themes/pm-flex-theme-child/Fonts/Proxima_Bold/ProximaNova-Bold.ttf')
+      format('truetype');
+}
+
 @mixin page-title-border-box {
   display: -webkit-box;
   display: -ms-flexbox;

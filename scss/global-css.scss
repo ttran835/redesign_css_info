@@ -1,6 +1,11 @@
 @import './custom';
 
 /* This will be used to change overall site's color variables */
+
+html * {
+  font-family: 'Proxima-Reg', Arial, Helvetica, sans-serif;
+}
+
 body {
   overflow-x: hidden;
 }

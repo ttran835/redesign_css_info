@@ -6,14 +6,21 @@ $vlp-font-color: #999999;
 .vdp {
   background-color: $inventory-primary-color;
   #inventory-display-container {
+    padding-top: 2vh !important;
     background-color: $inventory-primary-color !important;
     #vlp-filters {
       margin-top: 0;
-      @include screen-queries-min-width('md') {
-        margin-top: 0;
-      }
       background-color: $inventory-primary-color;
       @include ui-shadow-no-hover;
+
+      .panel-default > .panel-heading {
+        background-color: #000 !important;
+        border-radius: 0;
+      }
+
+      .panel {
+        border: none;
+      }
       #vlp-search-panel {
         background-color: $inventory-primary-color;
         .logo-container {
@@ -202,6 +209,7 @@ $vlp-font-color: #999999;
       }
       .panel {
         padding: 0;
+        border: none;
       }
     }
     #vlp-content {
@@ -209,9 +217,11 @@ $vlp-font-color: #999999;
     }
     h1#inventory-page-title {
       border-bottom: solid thin #dbdbdb;
-      color: $vlp-font-color;
-      font-size: 1.5em;
-      margin-bottom: 5vh;
+      color: $primary-font-color;
+      font-size: 1.3em;
+      font-family: 'Proxima-Bold', Arial, Helvetica, sans-serif;
+      margin-top: 40px;
+      margin-bottom: 25px;
     }
   }
   #dealer-comments {
