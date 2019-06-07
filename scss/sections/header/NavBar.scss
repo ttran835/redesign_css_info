@@ -85,7 +85,7 @@
       letter-spacing: 0.02em;
       @include screen-queries-min-width('lg') {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         font-size: 1.5em;
       }
     }

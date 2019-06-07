@@ -2,6 +2,7 @@
 /* Inventory page VLP */
 
 $vlp-font-color: #999999;
+$vlp-border-color: #dbdbdb;
 
 .vdp {
   background-color: $inventory-primary-color;
@@ -45,7 +46,6 @@ $vlp-font-color: #999999;
           color: $primary-font-color;
           background-color: $primary-test-color;
           @include vlp-vdp-a-tag-btn;
-          padding: 0;
         }
         button {
           border-radius: 0;
@@ -69,6 +69,9 @@ $vlp-font-color: #999999;
         }
         .pull-right {
           display: none;
+        }
+        .refine-row {
+          padding: 0;
         }
       }
       #latest-arrival {
@@ -141,8 +144,8 @@ $vlp-font-color: #999999;
           height: 88vh;
         }
         @include screen-queries-min-width('xtra-lg') {
-          top: 13vh;
-          height: 87vh;
+          top: 11vh;
+          height: 89vh;
         }
       }
     }
@@ -154,7 +157,7 @@ $vlp-font-color: #999999;
         bottom: -10px;
         @include vlp-vdp-a-tag-btn;
         color: $primary-font-color !important;
-        @include screen-queries-min-width('md') {
+        @include screen-queries-min-width('lg') {
           bottom: 20px;
         }
       }
@@ -167,21 +170,51 @@ $vlp-font-color: #999999;
       .vlp-item {
         background-color: $inventory-primary-color;
         border: none;
-        border-bottom: solid thin #dbdbd;
+        border-bottom: solid thin $vlp-border-color;
         border-radius: 0;
         box-shadow: none;
+        padding-bottom: 35px;
+        padding-top: 45px;
+        .image-column {
+          margin-bottom: 15px;
+        }
 
         #vehicle-info-wrapper {
-          h2 {
-            font-size: 1.4em;
-            font-weight: 500;
-            color: $vlp-font-color;
-          }
-          .pricing-block {
-            h4 {
-              color: $vlp-font-color;
+          .name-and-price {
+            padding: 0;
+            border-bottom: solid thin $vlp-border-color;
+            margin-bottom: 5px;
+            h2 {
+              font-size: 1.3em;
               font-weight: 500;
-              font-size: 1.4em;
+              color: $vlp-font-color;
+              padding-right: 5px;
+            }
+            .pricing-block {
+              h4 {
+                color: $vlp-font-color;
+                font-weight: 500;
+                font-size: 1.5em;
+              }
+            }
+          }
+
+          ul.list-unstyled {
+            li {
+              display: flex;
+              span {
+                font-family: 'Proxima-Semibold', Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                &:nth-child(odd) {
+                  display: block;
+                  width: 130px;
+                  font-family: 'Proxima-Bold', Arial, Helvetica, sans-serif;
+                  @include screen-queries-min-width('sm') {
+                    padding: 5px;
+                    font-size: 1.2em;
+                  }
+                }
+              }
             }
           }
         }
@@ -190,38 +223,36 @@ $vlp-font-color: #999999;
       .btn-group {
         margin-top: 0;
         .btn {
-          font-size: 1.2rem;
-          letter-spacing: 1px;
+          font-size: 1em;
+          font-family: 'Proxima-Bold', Arial, Helvetica, sans-serif;
           text-align: center;
-          width: 150px;
+          width: 170px;
           background-color: transparent;
           border-radius: 0;
           -webkit-transition: all 0.5s;
           -o-transition: all 0.5s;
           transition: all 0.5s;
+          padding: 10px;
           @include screen-queries-min-width('sm') {
             line-height: 0;
+            padding: 20px;
           }
           &:hover {
             background-color: #000;
           }
         }
       }
-      .panel {
-        padding: 0;
-        border: none;
-      }
     }
     #vlp-content {
       padding-top: 0;
     }
     h1#inventory-page-title {
-      border-bottom: solid thin #dbdbdb;
       color: $primary-font-color;
       font-size: 1.3em;
       font-family: 'Proxima-Bold', Arial, Helvetica, sans-serif;
       margin-top: 40px;
       margin-bottom: 25px;
+      border-bottom: solid thin $vlp-border-color;
     }
   }
   #dealer-comments {
