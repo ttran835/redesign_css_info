@@ -26,17 +26,18 @@
     a {
       display: block;
       position: relative;
-      width: 70%;
+      width: 80%;
       margin: 10px auto;
       text-align: center;
       @include a-tag-button-style;
-      border: 2px solid $primary-border-color;
+      border: 1px solid $primary-border-color;
       font-weight: 560;
-      padding: 10px 25px 10px;
+      padding: 13px 25px;
       letter-spacing: normal;
       text-transform: uppercase;
       @include text-box-shadow;
       color: $secondary-font-color;
+      font-size: 1.1em;
     }
     @include ui-shadow-with-hover;
     &:before {

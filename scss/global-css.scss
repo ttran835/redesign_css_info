@@ -29,6 +29,14 @@ body {
   }
 }
 
+h3 {
+  color: $primary-font-color;
+  text-align: center;
+  font-size: 2.1em;
+  padding: 45px 0 0;
+  margin: 10px 0 -25px;
+}
+
 .fc-page-title {
   background-color: $primary-test-color;
   color: $primary-font-color;

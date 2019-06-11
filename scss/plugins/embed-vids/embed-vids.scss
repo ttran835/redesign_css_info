@@ -4,11 +4,15 @@
 #custom-yt-section {
   background-color: $secondary-test-color !important;
   padding-bottom: 0 !important;
-  #embed-vid-title {
-    h3 {
-      padding-top: 25px;
-    }
+
+  h3 {
+    color: #000;
+    text-align: center;
+    font-size: 2.1em;
+    padding: 0px 0 0;
+    margin: 0px 0 0px;
   }
+
   .oembed-video-title {
     padding-top: 20px !important;
   }
