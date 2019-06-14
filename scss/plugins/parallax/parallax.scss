@@ -40,6 +40,7 @@
       }
     }
     @include page-title-border-box;
+    border: solid 3px #fff;
     padding: 20px;
     @include ui-shadow-no-hover;
     a {
@@ -94,7 +95,7 @@
       }
     }
     @include page-title-border-box;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     @include ui-shadow-no-hover;
     a {
       @include screen-queries-min-width('lg') {

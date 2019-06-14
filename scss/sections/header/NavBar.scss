@@ -5,7 +5,7 @@
   position: sticky !important;
   display: block;
   z-index: 9999;
-  background-color: #fff;
+  background-color: #000;
   top: 0;
   overflow-y: visible;
   @include ui-shadow-no-hover;
@@ -48,18 +48,19 @@
     z-index: 999;
     background-color: transparent !important;
     ul.navbar-nav {
+      background-color: #000 !important;
       padding: 2vh 0vw 0vh 3vw;
       @media (min-width: 1366px) {
         padding: 2vh 0vw 0vh 6vw;
       }
       li {
-        // padding-right: 0 !important;
         text-transform: uppercase;
-        border-bottom: solid thin #000;
+        border-bottom: solid thin #fff;
         @include screen-queries-min-width('lg') {
           border-bottom: none;
           a {
             padding-right: 20px !important;
+            color: #fff !important;
           }
         }
       }
@@ -83,10 +84,14 @@
     #phone {
       font-size: 1.46em;
       letter-spacing: 0.02em;
+      color: #fff;
       @include screen-queries-min-width('lg') {
         display: flex;
         justify-content: center;
-        font-size: 1.5em;
+        font-size: 1.7em;
+        font-family: 'Proxima-Semibold', Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        padding-right: 35px;
       }
     }
 
@@ -102,7 +107,7 @@
         padding: 2px 0px;
         font-size: 1.6em;
         .fa {
-          color: $primary-font-color;
+          color: #fff;
         }
         @include screen-queries-min-width('sm') {
           justify-content: center;
