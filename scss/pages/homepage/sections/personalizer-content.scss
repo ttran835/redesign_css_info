@@ -4,6 +4,19 @@
 #personalizer {
   position: relative;
   @include slick-arrows;
+  .slick-prev {
+    background-color: transparent;
+    &:before {
+      color: #000;
+    }
+  }
+
+  .slick-next {
+    background-color: transparent;
+    &:before {
+      color: #000;
+    }
+  }
   #personalized-message {
     display: -webkit-box;
     display: -ms-flexbox;
